@@ -1,10 +1,8 @@
-import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-type Props = {};
 
 import './appHeader.scss';
 
-const AppHeader = (props: Props) => {
+const AppHeader = () => {
     return (
         <header className="app__header">
             <h1 className="app__title">

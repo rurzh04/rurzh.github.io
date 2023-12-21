@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Box, useTheme } from '@mui/material';
 import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 
@@ -8,9 +6,7 @@ import { tokens } from '../../theme';
 import { useGetContactQuery } from '../../api/apiContact';
 import Spinner from '../../components/spinner/spinner';
 
-type Props = {};
-
-const Contacts = (props: Props) => {
+const Contacts = () => {
     const { data = [], error, isLoading } = useGetContactQuery();
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
